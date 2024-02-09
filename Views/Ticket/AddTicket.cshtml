@@ -1,0 +1,36 @@
+﻿<div class="contact-form-wrap">
+    <div class="text-center">
+        <h2 data-animate="fadeInUp" data-delay=".1">فرم ارسال نظر </h2>
+        <p data-animate="fadeInUp" data-delay=".2">
+            <span class="text-danger font-weight-bold">بهرهگیری از نظرات گرامی شما در خهت بهتر شدن</span>
+        </p>
+    </div>
+    <form class="contact-form" action="sendmail.php" method="post">
+        <div class="position-relative" data-animate="fadeInUp" data-delay=".3">
+            <input type="text" name="username" placeholder="نام کاربری" required class="form-control">
+        </div>
+        <div class="position-relative" data-animate="fadeInUp" data-delay=".4">
+            <input type="email" name="email" placeholder="پست الکترونیک*" required
+                   class="form-control">
+        </div>
+
+        <div class="position-relative" data-animate="fadeInUp" data-delay=".4">
+            <input type="text" name="object" placeholder="عنوان نظر " required
+                   class="form-control">
+        </div>
+        @*  <div class="position-relative" data-animate="fadeInUp" data-delay=".5">
+        <input type="text" name="telephone" placeholder="تلفن*"
+        data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-minlength="10"
+        data-parsley-minlength-message="Minimum 10 characters." required
+        class="form-control">
+        </div> *@
+
+        <div class="position-relative" data-animate="fadeInUp" data-delay=".7">
+            <textarea name="description" placeholder="متن پیام" required
+                      class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-square btn-block" data-animate="fadeInUp"
+                data-delay=".8">
+            ارسال پیام
+        </button>
+    </form>
